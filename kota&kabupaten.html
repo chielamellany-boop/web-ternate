@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome Cdjns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+    <!-- Animate Style -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- Aos -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Jonson Hamburgers -->
+    <link rel="stylesheet" href="hamburgers.css">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- css -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <title>Travel Ternate</title>
+</head>
+<body>
+  
+  <!-- Header -->
+  <section class="kota-kabupaten">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+      <i class="fas fa-dove"></i></div>
+      <ul class="menu">
+        <li><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></li>
+         <li><a href="about.html "> <i class="fa-solid fa-info-circle"></i>About</a></li>
+        <li><a href="contact.html"> <i class="fa-solid fa-comments"></i>Contact</a></li>
+        <li><a href="galery.html"> <i class="fa-solid fa-images"></i>Gallery</a></li>
+                <li><a href="pemesanan.html"> <i class="fa-solid fa-calendar-check"></i>Pemesanan</a></li>
+        <li><a href="destinasi-populer.html"> <i class="fa-solid fa-map-marked-alt"></i>Destinasi Populer</a></li>
+      </ul>
+      <button class="about-button"></button>
+      <button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    </div>
+    
+    <div class="hero">
+      <h1 class="animate__animated animate__fadeInUp animate__delay-2s">
+        <span id="t1">Kota dan kabupaten</span> <br /> 
+      <span id="t2">Ternate</span>
+      </h1>
+      <div class="hero-jargon">
+        <div class="animate__animated animate__fadeInUp animate__delay-1s">
+          <p><span>Indonesia</span> is a country that has many destinations that can be explored, one of which is the destination in Ternate.</p>
+        </div>
+        <div class="animate__animated animate__fadeInUp animate__delay-1s">
+          <p>This travel focuses only on <span>Indonesia</span> with many destinations that can be explored.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Section Kota & Kabupaten -->
+<section class="materi">
+  <div class="container">
+    <h2>Wisata Kota & Kabupaten</h2>
+
+    <div class="box-area">
+
+      <!-- Kabupaten -->
+      <div class="box">
+        <img src="pulau Danau Tolier.jpg" alt="Kabupaten Pulau tolier">
+        <h3>Kabupaten Pulau Morotai</h3>
+       
+        <p>
+          Kabupaten Pulau Morotai merupakan salah satu daerah di Maluku Utara yang terkenal 
+          dengan keindahan pantainya. Morotai juga memiliki sejarah penting pada masa Perang Dunia II. 
+          Saat ini, Morotai menjadi destinasi wisata unggulan dengan air laut yang jernih dan pasir putih.
+        </p>
+      </div>
+
+      <!-- Kota -->
+      <div class="box">
+        <img src="kota--kabupaten.jpg" alt="Kota Ternate">
+        <h3>Kota Ternate</h3>
+        <p>
+          Kota Ternate adalah pusat sejarah dan budaya di Maluku Utara. Kota ini terkenal 
+          sebagai penghasil rempah-rempah seperti cengkeh sejak zaman dahulu. Selain itu, 
+          Ternate memiliki berbagai destinasi wisata seperti gunung, pantai, dan benteng bersejarah.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const boxArea = document.querySelector('.box-area');
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    // Tangani mouse down di dalam box-area atau anak-anaknya
+    boxArea.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.pageX - boxArea.offsetLeft;
+      scrollLeft = boxArea.scrollLeft;
+    });
+
+    boxArea.addEventListener('mouseleave', () => {
+      isDragging = false;
+    });
+
+    boxArea.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    boxArea.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault(); // cegah seleksi teks/gambar
+      const x = e.pageX - boxArea.offsetLeft;
+      const walk = (x - startX) * 2.5;
+      boxArea.scrollLeft = scrollLeft - walk;
+    });
+  });
+</script>

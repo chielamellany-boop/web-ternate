@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome Cdjns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Animate Style -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+        <!-- Aos -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Jonson Hamburgers -->
+    <link rel="stylesheet" href="hamburgers.css">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- css -->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>About us</title>
+</head>
+<body>
+  
+  <!-- Header -->
+  <section class="pemesanan">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+      <i class="fa-solid fa-dove"></i></div>
+      </a>
+                  <ul class="menu">
+        <li><a href="index.html"> <i class="fa-solid fa-home"></i>Home</a></li>
+         <li><a href="about.html "> <i class="fa-solid fa-info-circle"></i>About</a></li>
+        <li><a href="contact.html"> <i class="fa-solid fa-comments"></i>Contact</a></li>
+        <li><a href="galery.html"> <i class="fa-solid fa-images"></i>Gallery</a></li>
+                <li><a href="pemesanan.html"> <i class="fa-solid fa-calendar-check"></i>Pemesanan</a></li>
+        <li><a href="destinasi-populer.html"> <i class="fa-solid fa-map-marked-alt"></i>Destinasi Populer</a></li>
+      </ul>
+      <button class="about-button"></button>
+      <button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    </div>
+    <div class="hero">
+      <h1 class="animate__animated animate__fadeInUp animate__delay-2s">
+        <span id="t1">Pesan tiket</span> <br /> 
+      <span id="t2">Dibawah ini</span>
+      </h1>
+      <div class="hero-jargon">
+        <div class="animate__animated animate__fadeInUp animate__delay-1s">
+          <p><span>Indonesia</span> is a country that has many destinations that can be explored, one of which is the destination in kota ternate.</p>
+        </div>
+        <div class="animate__animated animate__fadeInUp animate__delay-1s">
+          <p>This travel focuses only on <span>Indonesia</span> with many destinations that can be explored.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Header -->
+  
+  <!-- ABOUT -->
+<!-- ABOUT -->
+  <div class="mangga-container">
+    <h1 class="anggur-header">Form Pemesanan Paket Wisata</h1>
+    <form id="form-pemesanan" novalidate>
+      <div class="pisang-form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" class="jeruk-input" placeholder="Masukkan nama lengkap" required>
+      </div>
+      <br>
+
+      <div class="pisang-form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="jeruk-input" placeholder="Masukkan email aktif" required>
+      </div>
+      <br>
+
+      <div class="pisang-form-group">
+        <label for="telepon">Nomor Telepon</label>
+        <input type="tel" id="telepon" class="jeruk-input" placeholder="Contoh: 085811676856" required>
+      </div>
+      <br>
+
+      <div class="pisang-form-group kiwi-datepicker">
+        <label for="tanggal">Tanggal Perjalanan</label>
+        <input type="date" id="tanggal" class="jeruk-input" required>
+      </div>
+      <br>
+
+      <div class="pisang-form-group">
+        <label for="jumlah">Jumlah Peserta</label>
+        <input type="number" id="jumlah" class="jeruk-input" min="1" max="20" value="1" required>
+      </div>
+      <br>
+
+      <div class="pisang-form-group">
+        <label>Metode Pembayaran</label>
+        <div class="salak-radio-group">
+          <div class="salak-radio-option">
+            <input type="radio" id="transfer" name="pembayaran" value="Transfer Bank" required>
+            <label for="transfer">Transfer Bank</label>
+          </div>
+          <div class="salak-radio-option">
+            <input type="radio" id="kartu" name="pembayaran" value="Kartu Kredit">
+            <label for="kartu">Kartu Kredit</label>
+          </div>
+          <div class="salak-radio-option">
+            <input type="radio" id="cod" name="pembayaran" value="Bayar di Tempat">
+            <label for="cod">Bayar di Tempat</label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="pisang-form-group">
+        <label for="catatan">Permintaan Khusus</label>
+        <textarea id="catatan" class="jeruk-input pepaya-textarea" placeholder="Masukkan permintaan khusus, alergi, dll."></textarea>
+      </div>
+
+      <div class="pisang-form-group">
+        <button type="submit" class="nanas-button">Pesan Sekarang</button>
+      </div>
+    </form>
+
+    <div class="rambutan-success" id="success-message" style="display:none;">
+      <h2>Pemesanan Berhasil!</h2>
+      <p>Terima kasih sudah memesan paket wisata kami.</p>
+      <div class="alpukat-details" id="detail-pemesanan"></div>
+      <button class="nanas-button" id="btn-buat-baru" style="background-color:#4a6b3b; margin-top:20px;">Buat Pesanan Baru</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('form-pemesanan');
+      const tanggalInput = document.getElementById('tanggal');
+      const successMessage = document.getElementById('success-message');
+      const detailPemesanan = document.getElementById('detail-pemesanan');
+      const btnBuatBaru = document.getElementById('btn-buat-baru');
+
+      const today = new Date().toISOString().split('T')[0];
+      tanggalInput.setAttribute('min', today);
+
+      const namaDestinasi = {
+        pantai: 'Pulau pantai sulamadha ternate',
+        danau: 'Pulau danau tolier',
+        alam: 'gunung gembala',
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nama = document.getElementById('nama').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const telepon = document.getElementById('telepon').value.trim();
+        const destinasi = document.getElementById('destinasi').value;
+        const tanggal = tanggalInput.value;
+        const jumlah = document.getElementById('jumlah').value;
+        const pembayaranEl = document.querySelector('input[name="pembayaran"]:checked');
+        const catatan = document.getElementById('catatan').value.trim() || '-';
+
+        if (nama.length < 2) {
+          alert('Nama harus diisi minimal 2 karakter.');
+          return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert('Email tidak valid.');
+          return;
+        }
+
+        const teleponRegex = /^[0-9]{10,15}$/;
+        if (!teleponRegex.test(telepon)) {
+          alert('Nomor telepon harus 10-15 digit dan hanya angka.');
+          return;
+        }
+
+        if (!destinasi) {
+          alert('Silakan pilih destinasi wisata.');
+          return;
+        }
+
+        if (!tanggal) {
+          alert('Tanggal perjalanan harus diisi.');
+          return;
+        }
+
+        if (new Date(tanggal) < new Date(today)) {
+          alert('Tanggal perjalanan tidak boleh sebelum hari ini.');
+          return;
+        }
+
+        if (!(jumlah >= 1 && jumlah <= 20)) {
+          alert('Jumlah peserta harus antara 1 sampai 20 orang.');
+          return;
+        }
+
+        if (!pembayaranEl) {
+          alert('Silakan pilih metode pembayaran.');
+          return;
+        }
+
+        // Tampilkan hasil
+        successMessage.style.display = 'block';
+        form.style.display = 'none';
+
+        detailPemesanan.innerHTML = `
+          <h3>Detail Pemesanan</h3>
+          <p><strong>Nama:</strong> ${nama}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Telepon:</strong> ${telepon}</p>
+          <p><strong>Destinasi:</strong> ${namaDestinasi[destinasi]}</p>
+          <p><strong>Tanggal Perjalanan:</strong> ${new Date(tanggal).toLocaleDateString('id-ID', {
+            year: 'numeric', month: 'long', day: 'numeric'
+          })}</p>
+          <p><strong>Jumlah Peserta:</strong> ${jumlah}</p>
+          <p><strong>Metode Pembayaran:</strong> ${pembayaranEl.value}</p>
+          <p><strong>Permintaan Khusus:</strong> ${catatan}</p>
+        `;
+      });
+
+      btnBuatBaru.addEventListener('click', () => {
+        form.reset();
+        form.style.display = 'block';
+        successMessage.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
+
+     <!-- Section Footer -->
+
+      <!-- Section Footer -->
+      
+                <!-- Pre Loader -->
+    <div class="loader">
+      <img src="loader.svg">
+    </div>
+    <!-- Pre Loader -->
+      
+  <!-- JS -->
+  <script src="script.js"></script>
+  
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- ABOUT -->
+  
+  </body>
+  </html>
